@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="shortcut icon" href="#"/>
+</head>
+<body>
+<div th:if="${session.account!=null}">
+
+    <span th:text="${session.account.username}+'欢迎回来'"></span>
+    <a href="/logout">退出</a>
+</div>
+<a href="/main">main</a>
+<a href="/admin">admin</a>
+<a href="/manage">manage</a>
+
+</body>
+</html>
